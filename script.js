@@ -8,11 +8,15 @@ function toggleMenu() {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth"
+
+    const targetElement = document.querySelector(this.getAttribute("href"));
+    targetElement.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
     });
   });
 });
+
 
 const messages = document.getElementById("chat-messages");
 const userInput = document.getElementById("user-input");
