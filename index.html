@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Rob Saidov</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#chatbot">ChatBot</a></li>
+          <li><a href="#contact">Contact</a></li>
+          
+
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Rob Saidov</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+          <li><a href="#chatbot" onclick="toggleMenu()">ChatBot</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/circle crop profile picture.png" alt="Rob Saidov profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Rob</h1>
+        <p class="section__text__p2">ML Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Rob Saidov - Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/robsaidov/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/RobSaidov'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/dallas.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />ML Engineer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />San Francisco Bay University</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hey! I’m Rob Saidov, a Software and Machine Learning Engineer currently
+              based in California. I’m pursuing my Bachelor’s in Computer Science at San
+              Francisco Bay University, focusing on artificial intelligence and data science.
+              My passion lies in building innovative AI systems, coding solutions, and 
+              exploring robotics. I’ve worked on projects like self-driving car simulations
+              and emotion recognition systems. Outside of tech, I enjoy cycling and DIY engineering projects.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">ML Engineering</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TensorFlow</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PyTorch</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Scikit-learn</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>OpenCV</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Hugging Face</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Deep Learning</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Science</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pandas</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NumPy</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tableau</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Data Visualization</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Project 1 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/emosense.png"
+                alt="EmoSense: Emotion Recognition System"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">EmoSense</h2>
+            <p class="project-description">
+              Real-time emotion recognition using CNNs and the FER-2013 dataset. Enhanced robustness with data augmentation techniques.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/RobSaidov/EmoSense'"
+              >
+                Github
+              </button>
+
+            </div>
+          </div>
+    
+          <!-- Project 2 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/carla.jpeg"
+                alt="Self-Driving Car Simulation"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Self-Driving Car Simulation</h2>
+            <p class="project-description">
+              Simulated autonomous driving with CARLA, incorporating lane detection, obstacle avoidance, and deep reinforcement learning.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/RobSaidov/SelfDrivingCarSim'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+    
+          <!-- Project 3 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/soil.jpg"
+                alt="Soil Monitoring System"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Soil Monitoring System</h2>
+            <p class="project-description">
+              Built an Arduino-based network to optimize irrigation schedules, reducing water usage by 30% across monitored fields.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/RobSaidov/SoilMonitoringSystem'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#certifications'"
+    />
+    
+    </section>
+
+
+
+<section id="certifications">
+  <p class="section__text__p1">Browse My</p>
+  <h1 class="title">Certifications</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <!-- Certification 1 -->
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/coursera.jpg"
+            alt="Coursera Certification Badge"
+            class="certification-badge"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">
+          Mathematics for Machine Learning
+        </h2>
+        <p class="project-description">
+          Covered foundational linear algebra and calculus concepts essential for machine learning.
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='./assets/coursera.pdf'"
+          >
+            Download PDF
+          </button>
+          <button
+            class="btn btn-color-1 project-btn"
+            onclick="location.href='https://coursera.org/share/a21f898c91d5fb58de27cd29362cc71a'"
+          >
+            View Online
+          </button>
+        </div>
+      </div>
+
+      <!-- Certification 2 -->
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/udemy.jpg"
+            alt="Udemy Certification Badge"
+            class="certification-badge"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">
+          Python for Data Science and Machine Learning Bootcamp
+        </h2>
+        <p class="project-description">
+          A comprehensive course on Python for data science and machine learning projects.
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='./assets/udemy.pdf'"
+          >
+            Download PDF
+          </button>
+          <button
+            class="btn btn-color-1 project-btn"
+            onclick="location.href='https://www.udemy.com/certificate/UC-0b40de48-9672-4791-97a3-aabf709c3c0f/'"
+          >
+            View Online
+          </button>
+        </div>
+      </div>
+
+      <!-- Certification 3 -->
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/sololearn.jpg"
+            alt="LinkedIn Certification Badge"
+            class="certification-badge"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">
+          Introduction to Programming Using Python
+        </h2>
+        <p class="project-description">
+          A beginner's guide to Python basics, including syntax, data structures, and problem-solving.
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='./assets/sololearn.pdf'"
+          >
+            Download PDF
+          </button>
+          <button
+            class="btn btn-color-1 project-btn"
+            onclick="location.href='https://www.sololearn.com/en/certificates/CT-SOAOQU3V'"
+          >
+            View Online
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arrow Button -->
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='#chatbot'"
+  />
+</section>
+
+<!-- Chatbot -->
+<section id="chatbot">
+  <p class="section__text__p1">Try My</p>
+  <h1 class="title">AI Chatbot</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="chatbot-container">
+          <div class="chat-header">
+            <h2>Ask Me Anything!</h2>
+          </div>
+          <div class="chat-body">
+            <div id="chat-messages"></div>
+          </div>
+          <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type your message..." />
+            <button id="send-btn">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Arrow pointing to Contact Section -->
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='#contact'"
+  />
+</section>
+
+        
+    
+    <!-- Contact Section -->
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:robsaidov@gmail.com" target="_blank">Email</a></p>
+
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#chatbot">ChatBot</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Rob Saidov. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
