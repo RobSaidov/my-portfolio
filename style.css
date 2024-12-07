@@ -365,7 +365,7 @@ article .icon {
   flex-direction: column; /* Stacks elements vertically */
   align-items: center;    /* Centers items horizontally */
   text-align: center;     /* Ensures all text is center-aligned */
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 2rem;
   gap: 1rem;              /* Adds space between stacked elements */
 }
@@ -384,8 +384,8 @@ article .icon {
 }
 
 .project-description {
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 0.9rem;
+  line-height: 1.3;
   color: rgb(85, 85, 85);
   max-width: 540px;
   margin-bottom: 1rem;
